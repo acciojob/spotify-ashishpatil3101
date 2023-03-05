@@ -16,6 +16,8 @@ public class Album {
         this.releaseDate = new Date();
     }
 
+
+
     public String getTitle() {
         return title;
     }
