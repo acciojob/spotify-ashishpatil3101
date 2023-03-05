@@ -312,6 +312,7 @@ public class SpotifyRepository {
                 break;
             }
         }
+        if(USER==null)   throw new Exception("User does not exist");
         for(Song sn:songs){
 
             if(sn.getTitle()==songTitle) {
@@ -319,6 +320,7 @@ public class SpotifyRepository {
                 break;
             }
         }
+        if(song==null)   throw new Exception("Song does not exist");
        if(!userVSsongLiked.containsKey(USER)) userVSsongLiked.put(USER,new ArrayList<>());
 
        List<Song> li=userVSsongLiked.get(USER);
